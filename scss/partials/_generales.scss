@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+a {
+    color: $gray-1;
+    text-decoration: none;
+
+
+    :hover {
+        color: $rojo-1;
+        text-decoration: none;
+        transition: 1s;
+    }
+}

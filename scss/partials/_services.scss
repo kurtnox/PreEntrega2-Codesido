@@ -1,0 +1,46 @@
+.services {
+    background: rgb(147, 147, 147);
+    background: linear-gradient(0deg, rgba(147, 147, 147, 1) 19%, rgba(222, 220, 220, 0.938813025210084) 97%);
+
+    .service-item {
+        padding: 40px;
+        background: rgb(189, 164, 119);
+        height: 100%;
+        border-radius: 25px;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.524);
+
+        h3 {
+            color: $color_1;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            font-size: 22px;
+            position: relative;
+            display: inline-block;
+            border-bottom: 4px solid #C4BBAF;
+            transition: 0.3s;
+        }
+
+        p {
+            line-height: 24px;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .readmore {
+            margin-top: 15px;
+            display: inline-block;
+            color: $bordo-1;
+        }
+
+        &:hover {
+            background: #f2db94;
+            transform: scale(1.1);
+            transition: 0.5s;
+
+            h3 {
+                border-color: $bordo-1;
+            }
+        }
+    }
+}

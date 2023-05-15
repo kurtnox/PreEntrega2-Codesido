@@ -1,0 +1,68 @@
+$background-color_1: rgba(0, 0, 0, 0.6);
+
+
+/* breadcrumbs */
+.breadcrumbs {
+    padding: 220px 0 10px 0;
+    min-height: 30vh;
+    background-image: url('../img/squat_bb.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:before {
+        content: "";
+        background-color: $background-color_1;
+        position: absolute;
+        inset: 0;
+    }
+
+    h2 {
+        font-size: 56px;
+        font-weight: 500;
+        color: $orange-1;
+        font-family: $font-family_1;
+        background-color: $rojo-1;
+        background-size: 70px;
+        border-radius: 5px;
+    }
+
+    ol {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0 0 10px 0;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: $color_2;
+        z-index: 9999;
+
+        a {
+            color: $gray-1;
+            transition: 0.3s;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        li {
+            font-size: 25px;
+            padding-left: 10px;
+            background-color: $bordo-1;
+            background-size: 20px;
+            border-radius: 5px;
+
+            li {
+                &::before {
+                    display: inline-block;
+                    padding-right: 10px;
+                    color: $color_1;
+                    content: "/";
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+#preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 999900;
+    overflow: hidden;
+    background: $red-2;
+    transition: all 1s ease-out;
+
+    &:before {
+        content: "";
+        position: fixed;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+        border: 6px solid $orange-1;
+        border-color: $brown-1 transparent $gray-1 transparent;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: animate-preloader 1.5s linear infinite;
+    }
+
+    @keyframes animate-preloader {
+        0% {
+            transform: rotate (0deg);
+        }
+
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+}

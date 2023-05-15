@@ -1,0 +1,97 @@
+@mixin post-styles {
+    box-shadow: 0 5px 29px rgba(0, 0, 0, 0.515);
+    transition: 0.3s;
+    background: #cfcfcf;
+
+    &:hover {
+        background: #d5ba86;
+        transition: 1s;
+        box-shadow: 0 8px 33px rgba(0, 0, 0, 0.793);
+
+        .post-title {
+            color: $bordo-1;
+        }
+
+        .readmore {
+            color: $rojo-1;
+        }
+
+        .post-img {
+            transform: scale(1.1);
+        }
+    }
+
+    .post-img {
+        img {
+            transition: 0.5s;
+        }
+    }
+
+    .intensidad {
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 25px;
+        background-color: $rojo-1;
+        color: $black;
+        text-transform: uppercase;
+        font-size: 13px;
+        padding: 6px 12px;
+        font-weight: 500;
+        font-family: $font-family_1;
+    }
+
+    .post-content {
+        padding: 30px;
+    }
+
+    p {
+        font-family: $font-family_2;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+
+    .post-title {
+        font-size: 30px;
+        color: $black;
+        font-weight: 700;
+        font-family: $font-family_2;
+        transition: 0.3s;
+        margin-bottom: 15px;
+    }
+
+    .meta {
+        i {
+            font-size: 16px;
+            color: $black;
+        }
+    }
+
+    span {
+        font-size: 15px;
+        color: $black;
+    }
+
+    .readmore {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        line-height: 1;
+        transition: 0.4s;
+        color: $red-2;
+
+        i {
+            line-height: 0;
+            margin-left: 6px;
+            font-size: 16px;
+        }
+    }
+}
+
+.samples {
+    .post-item {
+        @include post-styles;
+    }
+}

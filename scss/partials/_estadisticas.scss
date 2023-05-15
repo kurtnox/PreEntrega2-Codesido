@@ -1,0 +1,32 @@
+.stats-counter {
+    .stats.item {
+        background-color: $white;
+        box-shadow: 0 0 30px rgb(165, 165, 165);
+        padding: 30px;
+    }
+
+    background: rgb(184, 173, 173);
+
+    .stats-item {
+        span {
+            font-size: 36px;
+            display: block;
+            font-weight: 600;
+            color: $rojo-1;
+            font-family: $font-family_1;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+            font-weight: 600;
+            color: $rojo-1;
+            font-family: $font-family_1;
+        }
+    }
+}
+
+.container-planifs {
+    background: rgb(208, 199, 199);
+    background: linear-gradient(0deg, rgba(208, 199, 199, 0.958420868347339) 1%, rgba(115, 115, 115, 0.8911939775910365) 100%);
+}

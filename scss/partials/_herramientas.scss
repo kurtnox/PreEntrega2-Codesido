@@ -1,0 +1,110 @@
+#herramientas {
+    background: rgb(130, 130, 130);
+    background: linear-gradient(0deg, rgba(130, 130, 130, 1) 19%, rgba(147, 147, 147, 1) 97%);
+}
+
+.herramientas {
+    .nav-tabs {
+        border: 0;
+    }
+
+    .nav-link {
+        padding: 15px 0;
+        transition: 0.3s;
+        color: $black;
+        background: rgb(189, 164, 119);
+        border-radius: 20px;
+        cursor: pointer;
+        height: 100%;
+        border: 0;
+        border-bottom: 4px solid #000000;
+        border-left: 15%;
+
+        i {
+            padding-right: 15px;
+            font-size: 48px;
+        }
+
+        h4 {
+            font-family: $font-family_1;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        p {
+            text-align: center;
+            padding: 10% 5% 10% 5%;
+            font-family: $font-family_2;
+            font-size: 22px;
+        }
+
+        &:hover {
+            color: $black;
+        }
+    }
+
+    .tab-content {
+        margin-top: 30px;
+    }
+
+    .tab-pane {
+        h3 {
+            font-weight: 700;
+            font-size: 32px;
+            position: relative;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 260px;
+                height: 3px;
+                background: #ff0303;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                padding-top: 10px;
+            }
+
+            i {
+                font-size: 20px;
+                padding-right: 4px;
+            }
+        }
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.herramientass {
+    .nav-link.active {
+        background: #f2db94;
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 575px) {
+    .herramientas {
+        .nav-link {
+            h4 {
+                font-size: 16px;
+            }
+        }
+    }
+}

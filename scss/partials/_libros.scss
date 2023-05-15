@@ -1,0 +1,78 @@
+#libros {
+    background: rgb(130, 130, 130);
+    background: linear-gradient(0deg, rgba(130, 130, 130, 1) 19%, rgba(112, 112, 112, 1) 97%);
+
+    .container {
+        .nav-tabs {
+            border: 0;
+            border-radius: 25px;
+        }
+
+        .nav-link {
+            i {
+                padding-right: 15px;
+                font-size: 48px;
+            }
+
+            h4 {
+                font-size: 18px;
+                font-weight: 700;
+                font-family: $font-family_1;
+                margin: 0;
+            }
+        }
+    }
+
+    .nav-link {
+        border-radius: 25px;
+        background-color: $orange-1;
+
+        &:hover {
+            border: 2px solid black;
+            background-color: $gold-2;
+            transition: 1s;
+        }
+
+        &:active {
+            background-color: $gold-2;
+            border: 4px solid #79000C;
+        }
+    }
+
+    .tab-content {
+        a {
+            background-color: $bordo-1;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            margin-top: 20px;
+            margin-left: 25%;
+            height: 40px;
+            border: 2px solid #fbf8ee;
+
+            &:hover {
+                background-color: $yellow-2;
+                color: $gray-1;
+                transition: 1s;
+            }
+        }
+    }
+
+    p {
+        font-family: $font-family_2;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-family: $font-family_1;
+        font-size: 35px;
+        font-weight: 800;
+    }
+
+    img {
+        width: 250px;
+        height: 250px;
+    }
+}

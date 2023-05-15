@@ -1,0 +1,136 @@
+$background-color_1: rgba(0, 0, 0, 0.7);
+
+/* -------------------CARRUSEL----------------- */
+%carousel-icon {
+    background: none;
+    font-size: 26px;
+    line-height: 0;
+    background: rgba(255, 255, 255, 0.416);
+    border-radius: 50px;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    overflow-x: hidden;
+    padding: 0;
+
+    .carousel {
+        width: 100%;
+        min-height: 100vh;
+        padding: 80px 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .carousel-item {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        z-index: 1;
+        transition-duration: 0.4s;
+
+
+        &::before {
+            content: "";
+            background-color: $background-color_1;
+            position: absolute;
+            inset: 0;
+        }
+    }
+
+    .info {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+
+        .container {
+            .landing-title {
+                color: $gray-1;
+                margin-top: 20%;
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+                font-size: 56px;
+                font-weight: 700;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 80px;
+                    height: 4px;
+                    background: #AA0008;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+            }
+
+            p {
+                color: $gray-1;
+                font-size: 18px;
+            }
+
+            .btn-get-started {
+                font-family: $font-family_2;
+                font-weight: 500;
+                font-size: 16px;
+                letter-spacing: 1px;
+                display: inline-block;
+                padding: 12px 40px;
+                border-radius: 50px;
+                transition: 0.5s;
+                margin: 10px;
+                color: $color_1;
+                border: 2px solid #C4BBAF;
+
+                &:hover {
+                    background: #D80929;
+                    color: $gray-1;
+                }
+            }
+        }
+    }
+
+    .carousel-control-next-icon {
+        @extend %carousel-icon;
+        color: $color_3;
+    }
+
+    .carousel-control-prev-icon {
+        @extend %carousel-icon;
+        color: $gray-2;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        .info {
+            padding: 0 50px;
+
+            h1 {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .hero {
+        .carousel-control-prev {
+            padding-left: 15px;
+        }
+
+        .carousel-control-next {
+            padding-right: 15px;
+        }
+    }
+}

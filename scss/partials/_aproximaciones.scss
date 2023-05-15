@@ -1,0 +1,61 @@
+#aproximaciones {
+    background: $gold-2;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.381);
+
+    h6 {
+        font-family: $font-family_1;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    p {
+        font-family: $font-family_2;
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    form {
+        background: $brown-2;
+        color: $white;
+        padding: 10% 10% 10% 10%;
+        border-radius: 25px;
+        font-family: $font-family_1;
+        font-weight: 600;
+
+        &:hover {
+            transform: scale(1.06);
+            transition: 1s;
+            background-color: $bordo-1;
+            box-shadow: 0 5px 0 5px rgba(0, 0, 0, 0.118);
+        }
+    }
+
+    input {
+        background-color: $gray-2;
+        border-radius: 20px;
+    }
+
+    button {
+        background-color: $bordo-1;
+        border-radius: 25px;
+        align-items: center;
+        width: 50%;
+        margin-top: 10px;
+        margin-left: 25%;
+        height: 40px;
+        border: 2px solid #fbf8ee;
+
+        &:hover {
+            background-color: $red-2;
+            color: $gray-1;
+            transition: 1s;
+        }
+    }
+
+    li {
+        font-weight: 600;
+    }
+}
